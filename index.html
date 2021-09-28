@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="drawing">
+        <div class="title">
+
+            <h2>Онлайн рисовалка</h2>
+            <h4>Создана для художников и просто творческих людей
+            </h4>
+        </div>
+        <canvas id="canvas" width="600px" height="400px">
+    </canvas>
+        <form id="formDrawing">
+            <div class="thickness">
+                <label for="">Выберите толщину</label>
+                <input type="range" id="thickness" name="pencilThick" value="3">
+            </div>
+            <div class="color"><label for="">Выберите цвет кисти</label>
+                <input type="color" id="color" name="pencilСolor">
+            </div>
+            <div class="backgrcolor"><label for="">Выберите цвет фона</label>
+                <input type="color" id="backgrcolor" name="backgrСolor" value="#ffffff">
+            </div>
+        </form>
+        <div class="option">
+            <button class="button" onclick="saveDrawing()">Сохранить рисунок</button>
+            <button class="buttonClear" onclick="clearDrawing()">Очистить полотно</button>
+            <div id="saveDrawingInfo">
+                <img id="saveDrawingImg"><br> Щелкните правой кнопкой мыши на картинку (которая появится внизу) для сохранения ...
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
